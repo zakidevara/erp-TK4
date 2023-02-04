@@ -18,7 +18,7 @@
 		<?php include($BASE_URL.'/sidenav.php') ?>
 
 		<div class="p-5">		
-            <form action="/supplychain/controller/supplier/add.php" method="post" enctype="multipart/form-data">
+            <form action="/erp-TK4/controller/supplier/add.php" method="post" enctype="multipart/form-data">
                 <div class="container">
                     <h3 class="mb-4">Form Add Supplier</h3>
                     <div class="row">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary mt-4" name="add" value="Add">Add</button>
-                    <a href="/supplychain/view/supplier" class="btn btn-danger mt-4" role="button" aria-disabled="true">Batal</a>
+                    <a href="/erp-TK4/view/supplier" class="btn btn-danger mt-4" role="button" aria-disabled="true">Batal</a>
                 </div>
             </form>
 

@@ -1,6 +1,6 @@
 <?php
 	$servername = "localhost";
-	$dbname = "supplychaindb";
+	$dbname = "erp_db";
 	$username = "root";
 	$password = "";
 	try {

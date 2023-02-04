@@ -9,12 +9,12 @@
         $supplier = new Supplier($conn);
         try {
             $supplier->deleteSupplier($id);
-            header ("location:/supplychain/view/supplier/index.php");
+            header ("location:/erp-TK4/view/supplier/index.php");
         } catch (Exception $e) {
             echo "<p>Gagal menghapus dengan error: </p>";
             echo $e;
             echo "<p>Kembali ke halaman sebelumnya dalam 3 detik...</p>";
-            header ("Refresh: 3; URL=/supplychain/view/supplier/index.php");
+            header ("Refresh: 3; URL=/erp-TK4/view/supplier/index.php");
         }
     }
 ?>

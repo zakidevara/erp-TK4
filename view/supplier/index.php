@@ -12,7 +12,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" href="/supplychain/index.css">
+		<link rel="stylesheet" href="/erp-TK4/index.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -48,7 +48,7 @@
 								</td>
 								<td>						
 									<a href="./form_edit.php?id=<?= $item["IdSupplier"]?>" class="btn btn-warning btn-sm" role="button" aria-disabled="true">Edit</a>
-									<a href="/supplychain/controller/supplier/delete.php?id=<?= $item["IdSupplier"]?>" class="btn btn-danger btn-sm" role="button" aria-disabled="true">Delete</a>
+									<a href="/erp-TK4/controller/supplier/delete.php?id=<?= $item["IdSupplier"]?>" class="btn btn-danger btn-sm" role="button" aria-disabled="true">Delete</a>
 								</td>
 							</tr>
 				<?php
