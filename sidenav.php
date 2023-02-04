@@ -5,7 +5,7 @@
     <a href="#">Pengguna</a>
     <a href="#">Barang</a>
     <a href="/erp-TK4/view/supplier">Supplier</a>
-    <a href="#">Pelanggan</a>
+    <a href="/erp-TK4/view/pelanggan">Pelanggan</a>
     <a href="#">Pembelian</a>
     <a href="#">Penjualan</a>
 </div>
