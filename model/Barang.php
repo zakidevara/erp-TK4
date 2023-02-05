@@ -116,7 +116,7 @@
             try {
                 $query = "SELECT barang.IdBarang, barang.NamaBarang, HargaJual, JumlahPenjualan, pembelian.HargaBeli, pembelian.JumlahPembelian,
                 (HargaJual * JumlahPenjualan) as pendapatan,
-                ((HargaJual * JumlahPenjualan)-(pembelian.HargaBeli-pembelian.JumlahPembelian)) as keuntungan
+                ((HargaJual * JumlahPenjualan)-pembelian.HargaBeli) as keuntungan
                 FROM `penjualan` join `barang` on barang.IdBarang = penjualan.IdBarang
                 JOIN pembelian ON barang.IdBarang = pembelian.IdBarang GROUP by barang.IdBarang;";
                 $prepareDB = $this->conn->prepare($query);
