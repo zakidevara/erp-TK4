@@ -11,6 +11,6 @@
         $supplier->setAlamat($_POST['alamat']);
         $supplier->setNoTelp($_POST['no_telp']);
         $supplier->updateSupplier();
-        header ("location:/supplychain/view/supplier/index.php");
+        header ("location:/erp-TK4/view/supplier/index.php");
     }
 ?>
