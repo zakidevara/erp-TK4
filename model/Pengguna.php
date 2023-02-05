@@ -113,7 +113,7 @@
 			try {
 				$query = "UPDATE pengguna SET NamaPengguna = ?, Password = ?, NamaDepan = ?, NamaBelakang = ?, Alamat = ?, NoHp = ? WHERE IdPengguna = ?";
 				$prepareDB = $this->conn->prepare($query);
-				$sqlUpdatePengguna = $prepareDB->execute([$this->IdPengguna, $this->NamaPengguna, $this->getNamaDepan, $this->setNamaBelakang,$this->Alamat, $this->NoHp]);
+				$sqlUpdatePengguna = $prepareDB->execute([$this->IdPengguna, $this->NamaPengguna, $this->NamaDepan, $this->NamaBelakang, $this->Alamat, $this->NoHp]);
 	
 				return $sqlUpdatePengguna;
 			} catch (Exception $e) {
