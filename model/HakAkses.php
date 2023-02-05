@@ -24,15 +24,15 @@
 		}
 
 		function getIdAkses() {
-			return $IdAkses;
+			return $this->IdAkses;
 		}
 
 		function getNamaAkses() {
-			return $NamaAkses;
+			return $this->NamaAkses;
 		}
 
 		function getKeterangan() {
-			return $Keterangan;
+			return $this->Keterangan;
 		}
 
 
@@ -55,7 +55,7 @@
 				$prepareDB->execute();
 				$aksesList = $prepareDB->fetchAll();
 	
-				return $AksesList;
+				return $aksesList;
 			} catch (Exception $e) {
 				throw $e;
 			}

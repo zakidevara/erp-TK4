@@ -7,6 +7,6 @@
     <a href="/erp-TK4/view/supplier">Supplier</a>
     <a href="/erp-TK4/view/pelanggan">Pelanggan</a>
     <a href="/erp-TK4/view/laporan">Laporan</a>
-    <a href="#">Pembelian</a>
-    <a href="#">Penjualan</a>
+    <a href="/erp-TK4/view/pembelian">Pembelian</a>
+    <a href="/erp-TK4/view/penjualan">Penjualan</a>
 </div>
