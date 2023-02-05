@@ -45,7 +45,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Id Pengguna</label>
-                                <input name="id_pengguna" id="id_pengguna" class="form-control" placeholder="Contoh: U001" required />
+                                <input name="id_pengguna" id="id_pengguna" class="form-control" placeholder="Contoh: U001" value="<?= $pembelianDetail["IdPengguna"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Id Barang</label>
-                                <input name="id_barang" id="id_barang" class="form-control" placeholder="Contoh: S001" required />
+                                <input name="id_barang" id="id_barang" class="form-control" placeholder="Contoh: S001" value="<?= $pembelianDetail["IdBarang"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Id Supplier</label>
-                                <input name="id_supplier" id="id_supplier" class="form-control" placeholder="Contoh: L001" required />
+                                <input name="id_supplier" id="id_supplier" class="form-control" placeholder="Contoh: L001" value="<?= $pembelianDetail["IdSupplier"]?>" required />
                             </div>
                         </div>
                     </div>

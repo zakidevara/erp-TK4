@@ -51,7 +51,7 @@
                                     <?php echo $item["IdBarang"]; ?>
                                 </td>
                                 <td>
-                                    <?php echo $item["IDPelanggan"]; ?>
+                                    <?php echo $item["IdPelanggan"]; ?>
                                 </td>
 								<td>						
 									<a href="./form_edit.php?id=<?= $item["IdPenjualan"]?>" class="btn btn-warning btn-sm" role="button" aria-disabled="true">Edit</a>
