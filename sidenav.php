@@ -2,7 +2,7 @@
 <!-- Side navigation -->
 <div class="sidenav">
     <a href="/erp-TK4/view/hakakses">Hak Akses</a>
-    <a href="#">Pengguna</a>
+    <a href="/erp-TK4/view/pengguna">Pengguna</a>
     <a href="/erp-TK4/view/barang">Barang</a>
     <a href="/erp-TK4/view/supplier">Supplier</a>
     <a href="/erp-TK4/view/pelanggan">Pelanggan</a>

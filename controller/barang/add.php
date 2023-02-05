@@ -10,7 +10,7 @@
         $barang->setNamaBarang($_POST['nama_barang']);
         $barang->setSatuan($_POST['satuan']);
         $barang->setKeterangan($_POST['keterangan']);
-        $barang->setIdPengguna($_POST['id_pengguna'])
+        $barang->setIdPengguna($_POST['id_pengguna']);
         
         try {
             $barang->addBarang();
