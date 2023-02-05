@@ -1,11 +1,11 @@
 <?php	
 	$BASE_URL = realpath(dirname(__DIR__).'\..');
 	include($BASE_URL.'/connect_db.php');
-	include($BASE_URL.'/model/Pelanggan.php');
+	include($BASE_URL.'/model/Pengguna.php');
 
     $id = $_GET['id'];
-	$pelanggan = new Pelanggan($conn);
-	$pelangganDetail = $pelanggan->findPelangganById($id);
+	$pengguna = new Pengguna($conn);
+	$penggunaDetail = $pengguna->findPenggunaById($id);
     
 ?>
 
@@ -21,7 +21,7 @@
 		<?php include($BASE_URL.'/sidenav.php') ?>
 
 		<div class="p-5">		
-            <form action="/erp-TK4/controller/pelanggan/update.php" method="post" enctype="multipart/form-data">
+            <form action="/erp-TK4/controller/pengguna/update.php" method="post" enctype="multipart/form-data">
                 <div class="container">
                     <h3 class="mb-4">Form Add Pengguna</h3>
                     <div class="row">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-4" name="add" value="Add">Add</button>
+                    <button type="submit" class="btn btn-primary mt-4" name="update" value="Update">Update</button>
                     <a href="/erp-TK4/view/pengguna" class="btn btn-danger mt-4" role="button" aria-disabled="true">Batal</a>
                 </div>
             </form>

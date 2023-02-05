@@ -57,7 +57,7 @@
 								</td>
                                 
                                 <td>
-									<?php echo $item["NoHP"]; ?>
+									<?php echo $item["NoHp"]; ?>
 								</td>
 
 								<td>
