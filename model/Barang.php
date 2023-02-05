@@ -110,7 +110,24 @@
 			} catch (Exception $e) {
 				throw $e;
 			}
-		}		
+		}
+
+		function laporanList() {
+            try {
+                $query = "SELECT barang.IdBarang, barang.NamaBarang, HargaJual, JumlahPenjualan, pembelian.HargaBeli, pembelian.JumlahPembelian,
+                (HargaJual * JumlahPenjualan) as pendapatan,
+                ((HargaJual * JumlahPenjualan)-(pembelian.HargaBeli-pembelian.JumlahPembelian)) as keuntungan
+                FROM `penjualan` join `barang` on barang.IdBarang = penjualan.IdBarang
+                JOIN pembelian ON barang.IdBarang = pembelian.IdBarang GROUP by barang.IdBarang;";
+                $prepareDB = $this->conn->prepare($query);
+                $prepareDB->execute();
+                $barangList = $prepareDB->fetchAll();
+
+                return $barangList;
+            } catch (Exception $e) {
+                throw $e;
+            }
+        }
 
 	}
 ?>
