@@ -28,7 +28,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>ID Pengguna</label>
-                                <input name="id_pengguna" id="id_pengguna" class="form-control" placeholder="Contoh: P001" required />
+                                <input name="id_pengguna" id="id_pengguna" class="form-control" placeholder="Contoh: P001" value="<?= $penggunaDetail["IdPengguna"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Pengguna</label>
-                                <input name="nama_pengguna" id="nama_pengguna" class="form-control" placeholder="Contoh: Na Jaemin" required />
+                                <input name="nama_pengguna" id="nama_pengguna" class="form-control" placeholder="Contoh: Na Jaemin" value="<?= $penggunaDetail["NamaPengguna"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Password</label>
-                                <input name="password" id="password" type="password" class="form-control" placeholder="******" required />
+                                <input name="password" id="password" type="password" class="form-control" placeholder="******" value="<?= $penggunaDetail["Password"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Depan</label>
-                                <input name="nama_depan" id="nama_depan"  class="form-control" placeholder="Contoh: Na " required />
+                                <input name="nama_depan" id="nama_depan"  class="form-control" placeholder="Contoh: Na "value="<?= $penggunaDetail["NamaDepan"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Belakang</label>
-                                <input name="nama_belakang" id="nama_belakang" class="form-control" placeholder="Contoh: Jaemin" required />
+                                <input name="nama_belakang" id="nama_belakang" class="form-control" placeholder="Contoh: Jaemin" value="<?= $penggunaDetail["NamaBelakang"]?>"required />
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nomor Handphone</label>
-                                <input type="text" name="no_hp" id="no_hp" class="form-control" placeholder="Contoh: 0812345465" required />
+                                <input type="text" name="no_hp" id="no_hp" class="form-control" placeholder="Contoh: 0812345465" value="<?= $penggunaDetail["NoHp"]?>"required />
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Alamat</label>
-                                <textarea name="alamat" id="alamat" class="form-control" placeholder="Alamat" required rows="10"></textarea>
+                                <textarea name="alamat" id="alamat" class="form-control" placeholder="Alamat" value="<?= $penggunaDetail["Alamat"]?>" required rows="10"></textarea>
                             </div>
                         </div>
                     </div>
