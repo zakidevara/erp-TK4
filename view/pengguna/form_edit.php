@@ -52,7 +52,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Depan</label>
-                                <input name="nama_depan" id="nama_depan"  class="form-control" placeholder="Contoh: Na "value="<?= $penggunaDetail["NamaDepan"]?>" required />
+                                <input name="nama_depan" id="nama_depan"  class="form-control" placeholder="Contoh: Na " value="<?= $penggunaDetail["NamaDepan"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Belakang</label>
-                                <input name="nama_belakang" id="nama_belakang" class="form-control" placeholder="Contoh: Jaemin" value="<?= $penggunaDetail["NamaBelakang"]?>"required />
+                                <input name="nama_belakang" id="nama_belakang" class="form-control" placeholder="Contoh: Jaemin" value="<?= $penggunaDetail["NamaBelakang"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Alamat</label>
-                                <textarea name="alamat" id="alamat" class="form-control" placeholder="Alamat" value="<?= $penggunaDetail["Alamat"]?>" required rows="10"></textarea>
+                                <textarea name="alamat" id="alamat" class="form-control" placeholder="Alamat" required rows="10"><?= $penggunaDetail["Alamat"]?></textarea>
                             </div>
                         </div>
                     </div>
