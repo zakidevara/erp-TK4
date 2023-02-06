@@ -27,7 +27,7 @@
 		}
 
         function setNamaDepan($NamaDepan) {
-			$this->setNamaDepan = $NamaDepan;
+			$this->NamaDepan = $NamaDepan;
 		}
 
 		function setNamaBelakang($NamaBelakang) {

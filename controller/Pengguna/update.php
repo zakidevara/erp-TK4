@@ -9,11 +9,12 @@
         $pengguna->setIdPengguna($_POST['id_pengguna']);
         $pengguna->setNamaPengguna($_POST['nama_pengguna']);
         $pengguna->setPassword($_POST['password']);
+        echo $_POST['nama_depan'];
         $pengguna->setNamaDepan($_POST['nama_depan']);
         $pengguna->setNamaBelakang($_POST['nama_belakang']);
         $pengguna->setNoHP($_POST['no_hp']);
         $pengguna->setAlamat($_POST['alamat']);
-        $pengguna->updatepengguna();
+        $pengguna->updatePengguna();
         header ("location:/erp-TK4/view/pengguna/index.php");
     }
 ?>
