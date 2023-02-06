@@ -1,7 +1,7 @@
 <?php
 $BASE_URL = realpath(dirname(__DIR__).'\..');
 include($BASE_URL.'/connect_db.php');
-include($BASE_URL.'/model/Barang.php');
+include($BASE_URL.'/model/Pembelian.php');
 
 if(isset($_POST['update']));
 {
@@ -12,6 +12,7 @@ if(isset($_POST['update']));
     $pembelian->setIdPengguna($_POST['keterangan']);
     $pembelian->setIdBarang($_POST['id_pengguna']);
     $pembelian->setIdSupplier($_POST['id_pengguna']);
+    $pembelian->updatePembelian();
     header ("location:/erp-TK4/view/pembelian/index.php");
 }
 ?>

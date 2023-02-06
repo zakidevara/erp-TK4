@@ -14,14 +14,14 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" href="/supplychain/index.css">
+		<link rel="stylesheet" href="/erp-TK4/index.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<?php include($BASE_URL.'/sidenav.php') ?>
 
 		<div class="p-5">		
-            <form action="/supplychain/controller/pembelian/update.php" method="post" enctype="multipart/form-data">
+            <form action="/erp-TK4/controller/pembelian/update.php" method="post" enctype="multipart/form-data">
                 <div class="container">
                     <h3 class="mb-4">Form Edit Pembelian</h3>
                     <input name="id_pembelian" id="id_pembelian" class="form-control" value="<?= $pembelianDetail["IdPembelian"]?>" type="hidden" required />
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary mt-4" name="update" value="Update">Update</button>
-                    <a href="/supplychain/view/pembelian" class="btn btn-danger mt-4" role="button" aria-disabled="true">Batal</a>
+                    <a href="/erp-TK4/view/pembelian" class="btn btn-danger mt-4" role="button" aria-disabled="true">Batal</a>
                 </div>
             </form>
 
