@@ -53,7 +53,7 @@
             try {
                 $query = "UPDATE pembelian SET JumlahPembelian = ?, HargaBeli = ?, IdPengguna = ?, IdBarang = ?, IdSupplier = ? WHERE IdPembelian = ?";
                 $prepareDB = $this->conn->prepare($query);
-                return $prepareDB->execute([$this->IdPembelian, $this->JumlahPembelian, $this->HargaBeli, $this->IdPengguna, $this->IdBarang, $this->IdSupplier]);
+                return $prepareDB->execute([$this->JumlahPembelian, $this->HargaBeli, $this->IdPengguna, $this->IdBarang, $this->IdSupplier, $this->IdPembelian]);
             } catch (Exception $e) {
                 throw $e;
             }
