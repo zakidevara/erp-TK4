@@ -29,7 +29,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nama Akses</label>
-                                <input name="nama_akses" id="nama_akses" class="form-control" placeholder="Contoh: Super Admin" value="<?= $aksesDetail["NamAkses"]?>" required />
+                                <input name="nama_akses" id="nama_akses" class="form-control" placeholder="Contoh: Super Admin" value="<?= $aksesDetail["NamaAkses"]?>" required />
                             </div>
                         </div>
                     </div>

@@ -36,7 +36,7 @@
 									<?php echo $item["IdAkses"]; ?>
 								</td>
 								<td>
-									<?php echo $item["NamAkses"]; ?>
+									<?php echo $item["NamaAkses"]; ?>
 								</td>
 								<td>
 									<?php echo $item["Keterangan"]; ?>
