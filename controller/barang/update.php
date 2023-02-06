@@ -11,6 +11,7 @@
         $barang->setKeterangan($_POST['keterangan']);
         $barang->setSatuan($_POST['satuan']);
         $barang->setIdPengguna($_POST['id_pengguna']);
+        $barang->updateBarang();
         header ("location:/erp-TK4/view/barang/index.php");
     }
 ?>

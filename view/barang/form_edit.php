@@ -23,7 +23,7 @@
 		<div class="p-5">		
             <form action="/erp-TK4/controller/barang/update.php" method="post" enctype="multipart/form-data">
                 <div class="container">
-                    <h3 class="mb-4">Form Edit Baramg</h3>
+                    <h3 class="mb-4">Form Edit Barang</h3>
                     <input name="id_barang" id="id_barang" class="form-control" value="<?= $barangDetail["IdBarang"]?>" type="hidden" required />
                     <div class="row">
                         <div class="col-md-12">
@@ -37,7 +37,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Satuan</label>
-                                <input type="text" name="no_telp" id="no_telp" class="form-control" placeholder="Contoh: kg" value="<?= $barangDetail["Satuan"]?>" required />
+                                <input type="text" name="satuan" id="satuan" class="form-control" placeholder="Contoh: kg" value="<?= $barangDetail["Satuan"]?>" required />
                             </div>
                         </div>
                     </div>
@@ -46,6 +46,15 @@
                             <div class="form-group">
                                 <label>Keterangan</label>
                                 <textarea name="keterangan" id="keterangan" class="form-control" placeholder="Keterangan" required rows="10"><?= $barangDetail["Keterangan"]?></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>ID Pengguna</label>
+                                <input type="text" name="id_pengguna" id="id_pengguna" class="form-control" placeholder="Contoh: U001" value="<?= $barangDetail["IdPengguna"]?>" required />
                             </div>
                         </div>
                     </div>
